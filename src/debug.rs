@@ -404,7 +404,12 @@ pub fn debug_draw(
                         text.clone(),
                         TextStyle {
                             font_size: 12.0,
-                            color: Color::WHITE,
+                            color: Color::Rgba {
+                                red: 0.,
+                                green: 0.,
+                                blue: 0.,
+                                alpha: 0.,
+                            },
                             ..Default::default()
                         },
                     ),
